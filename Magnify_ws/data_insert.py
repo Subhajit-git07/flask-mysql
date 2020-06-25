@@ -22,7 +22,7 @@ data_L3_raw = data_L3_raw.drop_duplicates(subset=['ThirdHash'], keep='first')
 
 
 import pymysql
-connection = pymysql.connect(host='127.0.0.1',user='jenkins',password='ariba',db='ariba_logs')
+connection = pymysql.connect(host='127.0.0.1',user='jenkins1234',password='12345',db='abcdef_logs')
 cur=connection.cursor()
 
 for i in data_L3_raw["_raw"]:
