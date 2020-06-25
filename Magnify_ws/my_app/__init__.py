@@ -23,9 +23,9 @@ app.config.from_mapping(config)
 cache = Cache(app)
 
 app.config['MYSQL_HOST'] = '127.0.0.1'
-app.config['MYSQL_USER'] = 'jenkins'
-app.config['MYSQL_PASSWORD'] = 'ariba'
-app.config['MYSQL_DB'] = 'ariba_logs'
+app.config['MYSQL_USER'] = 'jenkins12345'
+app.config['MYSQL_PASSWORD'] = 'aaaaaaaa'
+app.config['MYSQL_DB'] = 'abcdegf_logs'
 mysql = MySQL(app)
 
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
@@ -33,7 +33,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test1.db'
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tutorial.db'
 app.config['WTF_CSRF_SECRET_KEY'] = 'random key for form'
 #app.config['LDAP_PROVIDER_URL'] = 'ldap://ds1phl0100.global.corp.sap:389/'
-app.config['LDAP_PROVIDER_URL'] = 'ldaps://10.3.152.145:636/'
+app.config['LDAP_PROVIDER_URL'] = 'ldaps://30.1.199.149:622/'
 app.config['LDAP_PROTOCOL_VERSION'] = 3
 db = SQLAlchemy(app)
  
