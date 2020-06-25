@@ -7,12 +7,12 @@ ldap.set_option(ldap.OPT_X_TLS_REQUIRE_CERT, ldap.OPT_X_TLS_ALLOW)
 
 def get_ldap_connection():
     conn = ldap.initialize(app.config['LDAP_PROVIDER_URL'])
-    # conn = ldap.initialize('ldap://10.48.176.4:389/')
+    # conn = ldap.initialize('ldap://10.11.176.40:311/')
     return conn
  
 # conn = get_ldap_connection()
 # print(conn)
-# conn.simple_bind_s('cn=I503867,ou=Identities,dc=global,dc=corp,dc=sap','')
+# conn.simple_bind_s('cn=I00000,ou=Identities,dc=global,dc=corp,dc=ssssss','')
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
