@@ -1,0 +1,344 @@
+(no name)
+ * Serving Flask app "my_app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Running on http://10.163.58.53:5001/ (Press CTRL+C to quit)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Debugger is active!
+ * Debugger PIN: 267-769-313
+10.163.58.53 - - [04/May/2020 05:15:48] "PUT /add_to_noise HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:29:41] "GET /add_to_noise?stacktrace=%20ariba.util.log.Logger.error(Logger.java:1658)%20ariba.util.log.Logger.error(Logger.java:1536)%20ariba.util.parameters.Parameters.getUncachedParameter(Parameters.java:688)%20ariba.util.parameters.Parameters.getParameter(Parameters.java:648)%20ariba.util.core.Parameters.getParameter(Parameters.java:49)%20ariba.util.core.Parameters.getStringParameter(Parameters.java:75)%20ariba.util.inspector.Inspector.getParameterSecurityLevel(Inspector.java:120)%20ariba.base.server.OSGiInspectorModule.getAuthorizionLevelRequired(OSGiInspectorModule.java:47)%20ariba.util.inspector.Inspector.checkPrintBody(Inspector.java:663)%20ariba.util.inspector.Inspector.printBody(Inspector.java:710)%20ariba.util.inspector.Inspector.printForm(Inspector.java:748)%20ariba.util.inspector.Inspector.printMainPage(Inspector.java:505)%20ariba.util.inspector.Inspector.processRequest(Inspector.java:365)%20ariba.util.http.multitab.AbstractMultiTabHandler.handleDefault(AbstractMultiTabHandler.java:60)%20ariba.util.http.multitab.cookie.TabManager.processRequest(TabManager.java:662)%20ariba.util.http.multitab.cookie.CookieBasedMultiTabSupport.processRequest(CookieBasedMultiTabSupport.java:99)%20ariba.util.http.multitab.MultiTabUtil.processRequest(MultiTabUtil.java:90)%20ariba.util.http.AribaServlet.wrapRequest(AribaServlet.java:107)%20ariba.util.http.AribaServlet.doPost(AribaServlet.java:121)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:660)%20ariba.util.http.LoggingServlet.service(LoggingServlet.java:40)%20ariba.util.http.AribaServlet.service(AribaServlet.java:52)%20ariba.util.inspector.Inspector.service(Inspector.java:839)%20ariba.base.server.Inspector.service(Inspector.java:37)%20ariba.app.server.Inspector.service(Inspector.java:124)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:741)%20org.apache.calina.core.ApplicionFilterChain.internalDoFilter(ApplicionFilterChain.java:231)%20org.apache.calina.core.ApplicionFilterChain.doFilter(ApplicionFilterChain.java:166)%20org.apache.tomc.w HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask_caching/__init__.py", line 436, in decorated_function
+    rv = f(*args, **kwargs)
+  File "/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py", line 27, in index12
+    param = (stacktrace,)
+UnboundLocalError: local variable 'stacktrace' referenced before assignment
+10.128.92.10 - - [04/May/2020 05:29:42] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:29:42] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:29:42] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:29:44] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:29:44] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:29:45] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:31:05] "GET /add_to_noise?stacktrace=%20ariba.util.log.Logger.error(Logger.java:1658)%20ariba.util.log.Logger.error(Logger.java:1536)%20ariba.util.parameters.Parameters.getUncachedParameter(Parameters.java:688)%20ariba.util.parameters.Parameters.getParameter(Parameters.java:648)%20ariba.util.core.Parameters.getParameter(Parameters.java:49)%20ariba.util.core.Parameters.getStringParameter(Parameters.java:75)%20ariba.util.inspector.Inspector.getParameterSecurityLevel(Inspector.java:120)%20ariba.base.server.OSGiInspectorModule.getAuthorizionLevelRequired(OSGiInspectorModule.java:47)%20ariba.util.inspector.Inspector.checkPrintBody(Inspector.java:663)%20ariba.util.inspector.Inspector.printBody(Inspector.java:710)%20ariba.util.inspector.Inspector.printForm(Inspector.java:748)%20ariba.util.inspector.Inspector.printMainPage(Inspector.java:505)%20ariba.util.inspector.Inspector.processRequest(Inspector.java:365)%20ariba.util.http.multitab.AbstractMultiTabHandler.handleDefault(AbstractMultiTabHandler.java:60)%20ariba.util.http.multitab.cookie.TabManager.processRequest(TabManager.java:662)%20ariba.util.http.multitab.cookie.CookieBasedMultiTabSupport.processRequest(CookieBasedMultiTabSupport.java:99)%20ariba.util.http.multitab.MultiTabUtil.processRequest(MultiTabUtil.java:90)%20ariba.util.http.AribaServlet.wrapRequest(AribaServlet.java:107)%20ariba.util.http.AribaServlet.doPost(AribaServlet.java:121)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:660)%20ariba.util.http.LoggingServlet.service(LoggingServlet.java:40)%20ariba.util.http.AribaServlet.service(AribaServlet.java:52)%20ariba.util.inspector.Inspector.service(Inspector.java:839)%20ariba.base.server.Inspector.service(Inspector.java:37)%20ariba.app.server.Inspector.service(Inspector.java:124)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:741)%20org.apache.calina.core.ApplicionFilterChain.internalDoFilter(ApplicionFilterChain.java:231)%20org.apache.calina.core.ApplicionFilterChain.doFilter(ApplicionFilterChain.java:166)%20org.apache.tomc.w HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask_caching/__init__.py", line 436, in decorated_function
+    rv = f(*args, **kwargs)
+  File "/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py", line 27, in index12
+    param = (stacktrace,)
+UnboundLocalError: local variable 'stacktrace' referenced before assignment
+10.128.92.10 - - [04/May/2020 05:31:06] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:31:06] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:31:06] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:31:08] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:31:09] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:36:51] "GET /add_to_noise?stacktrace=%20ariba.util.log.Logger.error(Logger.java:1658)%20ariba.util.log.Logger.error(Logger.java:1536)%20ariba.util.parameters.Parameters.getUncachedParameter(Parameters.java:688)%20ariba.util.parameters.Parameters.getParameter(Parameters.java:648)%20ariba.util.core.Parameters.getParameter(Parameters.java:49)%20ariba.util.core.Parameters.getStringParameter(Parameters.java:75)%20ariba.util.inspector.Inspector.getParameterSecurityLevel(Inspector.java:120)%20ariba.base.server.OSGiInspectorModule.getAuthorizionLevelRequired(OSGiInspectorModule.java:47)%20ariba.util.inspector.Inspector.checkPrintBody(Inspector.java:663)%20ariba.util.inspector.Inspector.printBody(Inspector.java:710)%20ariba.util.inspector.Inspector.printForm(Inspector.java:748)%20ariba.util.inspector.Inspector.printMainPage(Inspector.java:505)%20ariba.util.inspector.Inspector.processRequest(Inspector.java:365)%20ariba.util.http.multitab.AbstractMultiTabHandler.handleDefault(AbstractMultiTabHandler.java:60)%20ariba.util.http.multitab.cookie.TabManager.processRequest(TabManager.java:662)%20ariba.util.http.multitab.cookie.CookieBasedMultiTabSupport.processRequest(CookieBasedMultiTabSupport.java:99)%20ariba.util.http.multitab.MultiTabUtil.processRequest(MultiTabUtil.java:90)%20ariba.util.http.AribaServlet.wrapRequest(AribaServlet.java:107)%20ariba.util.http.AribaServlet.doPost(AribaServlet.java:121)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:660)%20ariba.util.http.LoggingServlet.service(LoggingServlet.java:40)%20ariba.util.http.AribaServlet.service(AribaServlet.java:52)%20ariba.util.inspector.Inspector.service(Inspector.java:839)%20ariba.base.server.Inspector.service(Inspector.java:37)%20ariba.app.server.Inspector.service(Inspector.java:124)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:741)%20org.apache.calina.core.ApplicionFilterChain.internalDoFilter(ApplicionFilterChain.java:231)%20org.apache.calina.core.ApplicionFilterChain.doFilter(ApplicionFilterChain.java:166)%20org.apache.tomc.w HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask_caching/__init__.py", line 436, in decorated_function
+    rv = f(*args, **kwargs)
+  File "/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py", line 27, in index12
+    param = (stacktrace,)
+UnboundLocalError: local variable 'stacktrace' referenced before assignment
+10.128.92.10 - - [04/May/2020 05:36:53] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:36:53] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:36:53] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:36:54] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 05:36:55] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 06:06:19] "GET /add_to_noise?stacktrace=%20ariba.util.log.Logger.error(Logger.java:1658)%20ariba.util.log.Logger.error(Logger.java:1536)%20ariba.util.parameters.Parameters.getUncachedParameter(Parameters.java:688)%20ariba.util.parameters.Parameters.getParameter(Parameters.java:648)%20ariba.util.core.Parameters.getParameter(Parameters.java:49)%20ariba.util.core.Parameters.getStringParameter(Parameters.java:75)%20ariba.util.inspector.Inspector.getParameterSecurityLevel(Inspector.java:120)%20ariba.base.server.OSGiInspectorModule.getAuthorizionLevelRequired(OSGiInspectorModule.java:47)%20ariba.util.inspector.Inspector.checkPrintBody(Inspector.java:663)%20ariba.util.inspector.Inspector.printBody(Inspector.java:710)%20ariba.util.inspector.Inspector.printForm(Inspector.java:748)%20ariba.util.inspector.Inspector.printMainPage(Inspector.java:505)%20ariba.util.inspector.Inspector.processRequest(Inspector.java:365)%20ariba.util.http.multitab.AbstractMultiTabHandler.handleDefault(AbstractMultiTabHandler.java:60)%20ariba.util.http.multitab.cookie.TabManager.processRequest(TabManager.java:662)%20ariba.util.http.multitab.cookie.CookieBasedMultiTabSupport.processRequest(CookieBasedMultiTabSupport.java:99)%20ariba.util.http.multitab.MultiTabUtil.processRequest(MultiTabUtil.java:90)%20ariba.util.http.AribaServlet.wrapRequest(AribaServlet.java:107)%20ariba.util.http.AribaServlet.doPost(AribaServlet.java:121)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:660)%20ariba.util.http.LoggingServlet.service(LoggingServlet.java:40)%20ariba.util.http.AribaServlet.service(AribaServlet.java:52)%20ariba.util.inspector.Inspector.service(Inspector.java:839)%20ariba.base.server.Inspector.service(Inspector.java:37)%20ariba.app.server.Inspector.service(Inspector.java:124)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:741)%20org.apache.calina.core.ApplicionFilterChain.internalDoFilter(ApplicionFilterChain.java:231)%20org.apache.calina.core.ApplicionFilterChain.doFilter(ApplicionFilterChain.java:166)%20org.apache.tomc.w HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask_caching/__init__.py", line 436, in decorated_function
+    rv = f(*args, **kwargs)
+  File "/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py", line 27, in index12
+    param = (stacktrace,)
+UnboundLocalError: local variable 'stacktrace' referenced before assignment
+10.128.92.10 - - [04/May/2020 06:06:19] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 06:06:19] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 06:06:20] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 06:06:21] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 06:06:21] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+ * Detected change in '/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py', reloading
+(no name)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Debugger is active!
+ * Debugger PIN: 226-447-338
+10.128.92.10 - - [04/May/2020 06:11:32] "GET /add_to_noise?stacktrace=%20ariba.util.log.Logger.error(Logger.java:1658)%20ariba.util.log.Logger.error(Logger.java:1536)%20ariba.util.parameters.Parameters.getUncachedParameter(Parameters.java:688)%20ariba.util.parameters.Parameters.getParameter(Parameters.java:648)%20ariba.util.core.Parameters.getParameter(Parameters.java:49)%20ariba.util.core.Parameters.getStringParameter(Parameters.java:75)%20ariba.util.inspector.Inspector.getParameterSecurityLevel(Inspector.java:120)%20ariba.base.server.OSGiInspectorModule.getAuthorizionLevelRequired(OSGiInspectorModule.java:47)%20ariba.util.inspector.Inspector.checkPrintBody(Inspector.java:663)%20ariba.util.inspector.Inspector.printBody(Inspector.java:710)%20ariba.util.inspector.Inspector.printForm(Inspector.java:748)%20ariba.util.inspector.Inspector.printMainPage(Inspector.java:505)%20ariba.util.inspector.Inspector.processRequest(Inspector.java:365)%20ariba.util.http.multitab.AbstractMultiTabHandler.handleDefault(AbstractMultiTabHandler.java:60)%20ariba.util.http.multitab.cookie.TabManager.processRequest(TabManager.java:662)%20ariba.util.http.multitab.cookie.CookieBasedMultiTabSupport.processRequest(CookieBasedMultiTabSupport.java:99)%20ariba.util.http.multitab.MultiTabUtil.processRequest(MultiTabUtil.java:90)%20ariba.util.http.AribaServlet.wrapRequest(AribaServlet.java:107)%20ariba.util.http.AribaServlet.doPost(AribaServlet.java:121)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:660)%20ariba.util.http.LoggingServlet.service(LoggingServlet.java:40)%20ariba.util.http.AribaServlet.service(AribaServlet.java:52)%20ariba.util.inspector.Inspector.service(Inspector.java:839)%20ariba.base.server.Inspector.service(Inspector.java:37)%20ariba.app.server.Inspector.service(Inspector.java:124)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:741)%20org.apache.calina.core.ApplicionFilterChain.internalDoFilter(ApplicionFilterChain.java:231)%20org.apache.calina.core.ApplicionFilterChain.doFilter(ApplicionFilterChain.java:166)%20org.apache.tomc.w HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 06:11:33] "GET /favicon.ico HTTP/1.1" 404 -
+10.128.92.10 - - [04/May/2020 06:35:21] "GET /add_to_noise?stacktrace=%20ariba.util.log.Logger.error(Logger.java:1658)%20ariba.util.log.Logger.error(Logger.java:1536)%20ariba.util.parameters.Parameters.getUncachedParameter(Parameters.java:688)%20ariba.util.parameters.Parameters.getParameter(Parameters.java:648)%20ariba.util.core.Parameters.getParameter(Parameters.java:49)%20ariba.util.core.Parameters.getStringParameter(Parameters.java:75)%20ariba.util.inspector.Inspector.getParameterSecurityLevel(Inspector.java:120)%20ariba.base.server.OSGiInspectorModule.getAuthorizionLevelRequired(OSGiInspectorModule.java:47)%20ariba.util.inspector.Inspector.checkPrintBody(Inspector.java:663)%20ariba.util.inspector.Inspector.printBody(Inspector.java:710)%20ariba.util.inspector.Inspector.printForm(Inspector.java:748)%20ariba.util.inspector.Inspector.printMainPage(Inspector.java:505)%20ariba.util.inspector.Inspector.processRequest(Inspector.java:365)%20ariba.util.http.multitab.AbstractMultiTabHandler.handleDefault(AbstractMultiTabHandler.java:60)%20ariba.util.http.multitab.cookie.TabManager.processRequest(TabManager.java:662)%20ariba.util.http.multitab.cookie.CookieBasedMultiTabSupport.processRequest(CookieBasedMultiTabSupport.java:99)%20ariba.util.http.multitab.MultiTabUtil.processRequest(MultiTabUtil.java:90)%20ariba.util.http.AribaServlet.wrapRequest(AribaServlet.java:107)%20ariba.util.http.AribaServlet.doPost(AribaServlet.java:121)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:660)%20ariba.util.http.LoggingServlet.service(LoggingServlet.java:40)%20ariba.util.http.AribaServlet.service(AribaServlet.java:52)%20ariba.util.inspector.Inspector.service(Inspector.java:839)%20ariba.base.server.Inspector.service(Inspector.java:37)%20ariba.app.server.Inspector.service(Inspector.java:124)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:741)%20org.apache.calina.core.ApplicionFilterChain.internalDoFilter(ApplicionFilterChain.java:231)%20org.apache.calina.core.ApplicionFilterChain.doFilter(ApplicionFilterChain.java:166)%20org.apache.tomc.w HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 06:35:22] "GET /favicon.ico HTTP/1.1" 404 -
+10.128.92.10 - - [04/May/2020 06:35:27] "GET /add_to_noise?stacktrace=%20ariba.util.log.Logger.error(Logger.java:1658)%20ariba.util.log.Logger.error(Logger.java:1536)%20ariba.util.parameters.Parameters.getUncachedParameter(Parameters.java:688)%20ariba.util.parameters.Parameters.getParameter(Parameters.java:648)%20ariba.util.core.Parameters.getParameter(Parameters.java:49)%20ariba.util.core.Parameters.getStringParameter(Parameters.java:75)%20ariba.util.inspector.Inspector.getParameterSecurityLevel(Inspector.java:120)%20ariba.base.server.OSGiInspectorModule.getAuthorizionLevelRequired(OSGiInspectorModule.java:47)%20ariba.util.inspector.Inspector.checkPrintBody(Inspector.java:663)%20ariba.util.inspector.Inspector.printBody(Inspector.java:710)%20ariba.util.inspector.Inspector.printForm(Inspector.java:748)%20ariba.util.inspector.Inspector.printMainPage(Inspector.java:505)%20ariba.util.inspector.Inspector.processRequest(Inspector.java:365)%20ariba.util.http.multitab.AbstractMultiTabHandler.handleDefault(AbstractMultiTabHandler.java:60)%20ariba.util.http.multitab.cookie.TabManager.processRequest(TabManager.java:662)%20ariba.util.http.multitab.cookie.CookieBasedMultiTabSupport.processRequest(CookieBasedMultiTabSupport.java:99)%20ariba.util.http.multitab.MultiTabUtil.processRequest(MultiTabUtil.java:90)%20ariba.util.http.AribaServlet.wrapRequest(AribaServlet.java:107)%20ariba.util.http.AribaServlet.doPost(AribaServlet.java:121)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:660)%20ariba.util.http.LoggingServlet.service(LoggingServlet.java:40)%20ariba.util.http.AribaServlet.service(AribaServlet.java:52)%20ariba.util.inspector.Inspector.service(Inspector.java:839)%20ariba.base.server.Inspector.service(Inspector.java:37)%20ariba.app.server.Inspector.service(Inspector.java:124)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:741)%20org.apache.calina.core.ApplicionFilterChain.internalDoFilter(ApplicionFilterChain.java:231)%20org.apache.calina.core.ApplicionFilterChain.doFilter(ApplicionFilterChain.java:166)%20org.apache.tomc.w HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 07:03:00] "GET /add_to_noise?stacktrace=%20ariba.util.log.Logger.error(Logger.java:1658)%20ariba.util.log.Logger.error(Logger.java:1536)%20ariba.util.parameters.Parameters.getUncachedParameter(Parameters.java:688)%20ariba.util.parameters.Parameters.getParameter(Parameters.java:648)%20ariba.util.core.Parameters.getParameter(Parameters.java:49)%20ariba.util.core.Parameters.getStringParameter(Parameters.java:75)%20ariba.util.inspector.Inspector.getParameterSecurityLevel(Inspector.java:120)%20ariba.base.server.OSGiInspectorModule.getAuthorizionLevelRequired(OSGiInspectorModule.java:47)%20ariba.util.inspector.Inspector.checkPrintBody(Inspector.java:663)%20ariba.util.inspector.Inspector.printBody(Inspector.java:710)%20ariba.util.inspector.Inspector.printForm(Inspector.java:748)%20ariba.util.inspector.Inspector.printMainPage(Inspector.java:505)%20ariba.util.inspector.Inspector.processRequest(Inspector.java:365)%20ariba.util.http.multitab.AbstractMultiTabHandler.handleDefault(AbstractMultiTabHandler.java:60)%20ariba.util.http.multitab.cookie.TabManager.processRequest(TabManager.java:662)%20ariba.util.http.multitab.cookie.CookieBasedMultiTabSupport.processRequest(CookieBasedMultiTabSupport.java:99)%20ariba.util.http.multitab.MultiTabUtil.processRequest(MultiTabUtil.java:90)%20ariba.util.http.AribaServlet.wrapRequest(AribaServlet.java:107)%20ariba.util.http.AribaServlet.doPost(AribaServlet.java:121)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:660)%20ariba.util.http.LoggingServlet.service(LoggingServlet.java:40)%20ariba.util.http.AribaServlet.service(AribaServlet.java:52)%20ariba.util.inspector.Inspector.service(Inspector.java:839)%20ariba.base.server.Inspector.service(Inspector.java:37)%20ariba.app.server.Inspector.service(Inspector.java:124)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:741)%20org.apache.calina.core.ApplicionFilterChain.internalDoFilter(ApplicionFilterChain.java:231)%20org.apache.calina.core.ApplicionFilterChain.doFilter(ApplicionFilterChain.java:166)%20org.apache.tomc.w HTTP/1.1" 200 -
+10.52.37.10 - - [04/May/2020 09:42:22] "GET /add_to_noise?stacktrace=%20ariba.util.log.Logger.error(Logger.java:1658)%20ariba.util.log.Logger.error(Logger.java:1536)%20ariba.util.parameters.Parameters.getUncachedParameter(Parameters.java:688)%20ariba.util.parameters.Parameters.getParameter(Parameters.java:648)%20ariba.util.core.Parameters.getParameter(Parameters.java:49)%20ariba.util.core.Parameters.getStringParameter(Parameters.java:75)%20ariba.util.inspector.Inspector.getParameterSecurityLevel(Inspector.java:120)%20ariba.base.server.OSGiInspectorModule.getAuthorizionLevelRequired(OSGiInspectorModule.java:47)%20ariba.util.inspector.Inspector.checkPrintBody(Inspector.java:663)%20ariba.util.inspector.Inspector.printBody(Inspector.java:710)%20ariba.util.inspector.Inspector.printForm(Inspector.java:748)%20ariba.util.inspector.Inspector.printMainPage(Inspector.java:505)%20ariba.util.inspector.Inspector.processRequest(Inspector.java:365)%20ariba.util.http.multitab.AbstractMultiTabHandler.handleDefault(AbstractMultiTabHandler.java:60)%20ariba.util.http.multitab.cookie.TabManager.processRequest(TabManager.java:662)%20ariba.util.http.multitab.cookie.CookieBasedMultiTabSupport.processRequest(CookieBasedMultiTabSupport.java:99)%20ariba.util.http.multitab.MultiTabUtil.processRequest(MultiTabUtil.java:90)%20ariba.util.http.AribaServlet.wrapRequest(AribaServlet.java:107)%20ariba.util.http.AribaServlet.doPost(AribaServlet.java:121)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:660)%20ariba.util.http.LoggingServlet.service(LoggingServlet.java:40)%20ariba.util.http.AribaServlet.service(AribaServlet.java:52)%20ariba.util.inspector.Inspector.service(Inspector.java:839)%20ariba.base.server.Inspector.service(Inspector.java:37)%20ariba.app.server.Inspector.service(Inspector.java:124)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:741)%20org.apache.calina.core.ApplicionFilterChain.internalDoFilter(ApplicionFilterChain.java:231)%20org.apache.calina.core.ApplicionFilterChain.doFilter(ApplicionFilterChain.java:166)%20org.apache.tomc.w HTTP/1.1" 200 -
+10.52.37.10 - - [04/May/2020 10:09:39] "GET /add_to_noise?stacktrace=%20ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 10:37:36] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 10:37:36] "GET /favicon.ico HTTP/1.1" 404 -
+10.128.92.10 - - [04/May/2020 10:38:25] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 10:42:23] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+ * Detected change in '/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py', reloading
+(no name)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Debugger is active!
+ * Debugger PIN: 221-666-184
+10.128.92.10 - - [04/May/2020 10:44:38] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 10:45:04] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 10:46:34] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+ * Detected change in '/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py', reloading
+(no name)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Debugger is active!
+ * Debugger PIN: 146-859-392
+10.128.92.10 - - [04/May/2020 10:48:43] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+ * Detected change in '/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py', reloading
+(no name)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Debugger is active!
+ * Debugger PIN: 718-675-942
+10.128.92.10 - - [04/May/2020 10:51:20] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 11:49:03] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+ * Detected change in '/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py', reloading
+(no name)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Debugger is active!
+ * Debugger PIN: 291-422-305
+10.128.92.10 - - [04/May/2020 12:09:49] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/data/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+10.128.92.10 - - [04/May/2020 12:09:50] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:09:50] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:09:50] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:09:51] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:09:51] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:09:53] "GET /add_to_noise?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py', reloading
+(no name)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Debugger is active!
+ * Debugger PIN: 123-401-589
+10.128.92.10 - - [04/May/2020 12:10:35] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:10:55] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:10:59] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:11:01] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:11:03] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:11:05] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:11:07] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:11:09] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+ * Detected change in '/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py', reloading
+(no name)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Debugger is active!
+ * Debugger PIN: 586-527-352
+10.128.92.10 - - [04/May/2020 12:12:09] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:12:31] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:13:23] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:13:26] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:13:28] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:15:16] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:15:18] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:15:21] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:15:24] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:15:26] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:9361011)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:22:02] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:900000) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:22:47] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:900000) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:23:14] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:900000) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:23:16] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:900000) HTTP/1.1" 200 -
+10.128.92.10 - - [04/May/2020 12:23:18] "GET /add_to_noise?stacktrace=ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:900000) HTTP/1.1" 200 -
+10.52.43.158 - - [05/May/2020 05:22:08] "GET /add_to_noise?stacktrace=%20ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:935)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertNonFal(Assert.java:444)%20ariba.util.core.Assert.assertNonFal(Assert.java:331)%20ariba.tool.xmlschema.XMLSchemaGeneror.getReturnType(XMLSchemaGeneror.java:1600)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeGroupElement(XMLSchemaGeneror.java:1574)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeGroupElements(XMLSchemaGeneror.java:1043)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeSchemaElement(XMLSchemaGeneror.java:3324)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeTypesNode(XMLSchemaGeneror.java:3350)%20ariba.tool.xmlschema.XMLSchemaGeneror.buildWSDLTree(XMLSchemaGeneror.java:2907)%20ariba.tool.xmlschema.XMLSchemaGeneror.genereBaseWSDL(XMLSchemaGeneror.java:377)%20ariba.integrion.base.StableOrderUtil.initIntrinsicHash(StableOrderUtil.java:338)%20ariba.integrion.base.ApplicionAdapter.initialize(ApplicionAdapter.java:383)%20ariba.integrion.server.AMFManager.init(AMFManager.java:342)%20ariba.integrion.server.AMFManager.initialize(AMFManager.java:308)%20ariba.integrion.base.ApplicionAdapter.configure(ApplicionAdapter.java:991)%20ariba.integrion.base.ApplicionAdapter.configure(ApplicionAdapter.java:1152)%20ariba.integrion.base.ApplicionAdapter.registerEventSchedulerAndConfigure(ApplicionAdapter.java:405)%20ariba.app.server.CoreServer.initializeAMF(CoreServer.java:496)%20ariba.app.server.CoreServer.initializeAMF(CoreServer.java:463)%20ariba.server.ormsserver.Main.run(Main.java:125)%20ariba.rpc.server.ServerThread.run(ServerThread.java:500)%20ariba.base.server.ObjectServerThread.run(ObjectServerThread.java:515)%20java.lang.Thread.run(Thread.java:745) HTTP/1.1" 200 -
+ * Detected change in '/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py', reloading
+(no name)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Debugger is active!
+ * Debugger PIN: 322-893-021
+10.52.43.158 - - [05/May/2020 05:26:28] "GET /add_to_noise?stacktrace=%20ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:935)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertNonFal(Assert.java:444)%20ariba.util.core.Assert.assertNonFal(Assert.java:331)%20ariba.tool.xmlschema.XMLSchemaGeneror.getReturnType(XMLSchemaGeneror.java:1600)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeGroupElement(XMLSchemaGeneror.java:1574)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeGroupElements(XMLSchemaGeneror.java:1043)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeSchemaElement(XMLSchemaGeneror.java:3324)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeTypesNode(XMLSchemaGeneror.java:3350)%20ariba.tool.xmlschema.XMLSchemaGeneror.buildWSDLTree(XMLSchemaGeneror.java:2907)%20ariba.tool.xmlschema.XMLSchemaGeneror.genereBaseWSDL(XMLSchemaGeneror.java:377)%20ariba.integrion.base.StableOrderUtil.initIntrinsicHash(StableOrderUtil.java:338)%20ariba.integrion.base.ApplicionAdapter.initialize(ApplicionAdapter.java:383)%20ariba.integrion.server.AMFManager.init(AMFManager.java:342)%20ariba.integrion.server.AMFManager.initialize(AMFManager.java:308)%20ariba.integrion.base.ApplicionAdapter.configure(ApplicionAdapter.java:991)%20ariba.integrion.base.ApplicionAdapter.configure(ApplicionAdapter.java:1152)%20ariba.integrion.base.ApplicionAdapter.registerEventSchedulerAndConfigure(ApplicionAdapter.java:405)%20ariba.app.server.CoreServer.initializeAMF(CoreServer.java:496)%20ariba.app.server.CoreServer.initializeAMF(CoreServer.java:463)%20ariba.server.ormsserver.Main.run(Main.java:125)%20ariba.rpc.server.ServerThread.run(ServerThread.java:500)%20ariba.base.server.ObjectServerThread.run(ObjectServerThread.java:515)%20java.lang.Thread.run(Thread.java:745) HTTP/1.1" 200 -
+ * Detected change in '/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py', reloading
+(no name)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Debugger is active!
+ * Debugger PIN: 285-822-352
+ * Detected change in '/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py', reloading
+(no name)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Debugger is active!
+ * Debugger PIN: 180-147-258
+10.52.43.158 - - [05/May/2020 05:31:23] "GET /add_to_noise?stacktrace=%20ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:935)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertNonFal(Assert.java:444)%20ariba.util.core.Assert.assertNonFal(Assert.java:331)%20ariba.tool.xmlschema.XMLSchemaGeneror.getReturnType(XMLSchemaGeneror.java:1600)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeGroupElement(XMLSchemaGeneror.java:1574)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeGroupElements(XMLSchemaGeneror.java:1043)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeSchemaElement(XMLSchemaGeneror.java:3324)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeTypesNode(XMLSchemaGeneror.java:3350)%20ariba.tool.xmlschema.XMLSchemaGeneror.buildWSDLTree(XMLSchemaGeneror.java:2907)%20ariba.tool.xmlschema.XMLSchemaGeneror.genereBaseWSDL(XMLSchemaGeneror.java:377)%20ariba.integrion.base.StableOrderUtil.initIntrinsicHash(StableOrderUtil.java:338)%20ariba.integrion.base.ApplicionAdapter.initialize(ApplicionAdapter.java:383)%20ariba.integrion.server.AMFManager.init(AMFManager.java:342)%20ariba.integrion.server.AMFManager.initialize(AMFManager.java:308)%20ariba.integrion.base.ApplicionAdapter.configure(ApplicionAdapter.java:991)%20ariba.integrion.base.ApplicionAdapter.configure(ApplicionAdapter.java:1152)%20ariba.integrion.base.ApplicionAdapter.registerEventSchedulerAndConfigure(ApplicionAdapter.java:405)%20ariba.app.server.CoreServer.initializeAMF(CoreServer.java:496)%20ariba.app.server.CoreServer.initializeAMF(CoreServer.java:463)%20ariba.server.ormsserver.Main.run(Main.java:125)%20ariba.rpc.server.ServerThread.run(ServerThread.java:500)%20ariba.base.server.ObjectServerThread.run(ObjectServerThread.java:515)%20java.lang.Thread.run(Thread.java:745) HTTP/1.1" 200 -
+10.52.43.158 - - [05/May/2020 05:33:27] "GET /add_to_noise?stacktrace=%20ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:935)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertNonFal(Assert.java:444)%20ariba.util.core.Assert.assertNonFal(Assert.java:331)%20ariba.tool.xmlschema.XMLSchemaGeneror.getReturnType(XMLSchemaGeneror.java:1600)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeGroupElement(XMLSchemaGeneror.java:1574)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeGroupElements(XMLSchemaGeneror.java:1043)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeSchemaElement(XMLSchemaGeneror.java:3324)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeTypesNode(XMLSchemaGeneror.java:3350)%20ariba.tool.xmlschema.XMLSchemaGeneror.buildWSDLTree(XMLSchemaGeneror.java:2907)%20ariba.tool.xmlschema.XMLSchemaGeneror.genereBaseWSDL(XMLSchemaGeneror.java:377)%20ariba.integrion.base.StableOrderUtil.initIntrinsicHash(StableOrderUtil.java:338)%20ariba.integrion.base.ApplicionAdapter.initialize(ApplicionAdapter.java:383)%20ariba.integrion.server.AMFManager.init(AMFManager.java:342)%20ariba.integrion.server.AMFManager.initialize(AMFManager.java:308)%20ariba.integrion.base.ApplicionAdapter.configure(ApplicionAdapter.java:991)%20ariba.integrion.base.ApplicionAdapter.configure(ApplicionAdapter.java:1152)%20ariba.integrion.base.ApplicionAdapter.registerEventSchedulerAndConfigure(ApplicionAdapter.java:405)%20ariba.app.server.CoreServer.initializeAMF(CoreServer.java:496)%20ariba.app.server.CoreServer.initializeAMF(CoreServer.java:463)%20ariba.server.ormsserver.Main.run(Main.java:125)%20ariba.rpc.server.ServerThread.run(ServerThread.java:500)%20ariba.base.server.ObjectServerThread.run(ObjectServerThread.java:515)%20java.lang.Thread.run(Thread.java:745) HTTP/1.1" 200 -
+ * Detected change in '/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py', reloading
+(no name)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Debugger is active!
+ * Debugger PIN: 187-669-818
+10.52.43.158 - - [05/May/2020 05:35:43] "GET /add_to_noise?stacktrace=%20ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:935)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertNonFal(Assert.java:444)%20ariba.util.core.Assert.assertNonFal(Assert.java:331)%20ariba.tool.xmlschema.XMLSchemaGeneror.getReturnType(XMLSchemaGeneror.java:1600)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeGroupElement(XMLSchemaGeneror.java:1574)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeGroupElements(XMLSchemaGeneror.java:1043)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeSchemaElement(XMLSchemaGeneror.java:3324)%20ariba.tool.xmlschema.XMLSchemaGeneror.creeTypesNode(XMLSchemaGeneror.java:3350)%20ariba.tool.xmlschema.XMLSchemaGeneror.buildWSDLTree(XMLSchemaGeneror.java:2907)%20ariba.tool.xmlschema.XMLSchemaGeneror.genereBaseWSDL(XMLSchemaGeneror.java:377)%20ariba.integrion.base.StableOrderUtil.initIntrinsicHash(StableOrderUtil.java:338)%20ariba.integrion.base.ApplicionAdapter.initialize(ApplicionAdapter.java:383)%20ariba.integrion.server.AMFManager.init(AMFManager.java:342)%20ariba.integrion.server.AMFManager.initialize(AMFManager.java:308)%20ariba.integrion.base.ApplicionAdapter.configure(ApplicionAdapter.java:991)%20ariba.integrion.base.ApplicionAdapter.configure(ApplicionAdapter.java:1152)%20ariba.integrion.base.ApplicionAdapter.registerEventSchedulerAndConfigure(ApplicionAdapter.java:405)%20ariba.app.server.CoreServer.initializeAMF(CoreServer.java:496)%20ariba.app.server.CoreServer.initializeAMF(CoreServer.java:463)%20ariba.server.ormsserver.Main.run(Main.java:125)%20ariba.rpc.server.ServerThread.run(ServerThread.java:500)%20ariba.base.server.ObjectServerThread.run(ObjectServerThread.java:515)%20java.lang.Thread.run(Thread.java:745) HTTP/1.1" 200 -
+10.128.44.197 - - [12/May/2020 11:28:20] "GET /add_to_noise?stacktrace=%20ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:935)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertFal(Assert.java:463)%20ariba.util.core.Assert.assertFal(Assert.java:458)%20ariba.util.core.Assert.th(Assert.java:149)%20ariba.base.server.aql.AQLClassJoinMap.getClassCode(AQLClassJoinMap.java:1046)%20ariba.base.server.aql.AQLPartitionListClassJoinMap.initMapInternal(AQLPartitionListClassJoinMap.java:232)%20ariba.base.server.aql.AQLPartitionListClassJoinMap.initMap(AQLPartitionListClassJoinMap.java:172)%20ariba.base.server.aql.AQLClassJoinMap.%3Cinit%3E(AQLClassJoinMap.java:290)%20ariba.base.server.aql.AQLPartitionListClassJoinMap.%3Cinit%3E(AQLPartitionListClassJoinMap.java:103)%20ariba.base.server.aql.AQLJoinTree.addClass(AQLJoinTree.java:372)%20ariba.base.server.aql.AQLJoinTree.addClass(AQLJoinTree.java:393)%20ariba.base.server.aql.AQLGeneror.visitAQLClassReference(AQLGeneror.java:4594)%20ariba.base.core.aql.AQLClassReference.accept(AQLClassReference.java:303)%20ariba.base.core.aql.AQLClassSelect.accept(AQLClassSelect.java:156)%20ariba.base.core.aql.AQLQuery.accept(AQLQuery.java:612)%20ariba.base.server.aql.AQLGeneror.genere(AQLGeneror.java:344)%20ariba.base.server.aql.AQLGeneror.genere(AQLGeneror.java:319)%20ariba.base.server.aql.AQLSQLObjectSource.doGenereExecuteQuery(AQLSQLObjectSource.java:183)%20ariba.base.server.aql.AQLSQLObjectSource.genereExecuteQuery(AQLSQLObjectSource.java:285)%20ariba.base.core.aql.AQLObjectSourceImpl.valideGenereExecuteQuery(AQLObjectSourceImpl.java:285)%20ariba.base.core.aql.AQLObjectSourceImpl.executeQuery(AQLObjectSourceImpl.java:457)%20ariba.base.server.BaseServiceServerImpl.executeQuery(BaseServiceServerImpl.java:463)%20ariba.cxml.base.core.CXMLUtil.selectBaseId(CXMLUtil.java:112)%20ariba.cxml.base.core.CXMLUtil.selectBaseId(CXMLUtil.java:81)%20ariba.cxml.base.core.CXMLDocument.selectDocumentWithPayloadID(CXMLDocument.java:177)%20ariba.cxml.base.core.CXMLMetricsUtil.addToNullEntityRefDocumentIfNeeded(CXMLMetricsUtil.java:57)%20ariba.cxml.base.client.PersistenceServiceImpl.didAttemptDelivery(PersistenceServiceImpl.java:429)%20ariba.cxml.service.transport.InboundService.processResponseStream(InboundService.java:691)%20ariba.cxml.service.transport.InboundService.process(InboundService.java:255)%20ariba.channel.cxml.NetworkConnector.callback(NetworkConnector.java:162)%20ariba.cxml.service.transport.TransportService$1.callback(TransportService.java:111)%20ariba.channel.http.HTTPServer.doPost(HTTPServer.java:238)%20ariba.cxml.base.RequestListener.doPost(RequestListener.java:71)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:660)%20ariba.util.http.LoggingServlet.service(LoggingServlet.java:40)%20ariba.util.http.AribaServlet.service(AribaServlet.java:52)%20javax.servlet.http.HttpServlet.service(HttpServlet.java:741)%20org.apache.calina.core.ApplicionFilterChain.internalDoFilter(ApplicionFilterChain.java:231)%20org.apache.calina.core.ApplicionFilterChain.doFilter(ApplicionFilterChain.java:166)%20org.apache.tomc.websocket.server.WsFilter.doFilter(WsFilter.java:53)%20org.apache.calina.core.ApplicionFilterChain.internalDoFilter(ApplicionFilterChain.java:193)%20org.apache.calina.core.ApplicionFilterChain.doFilter(ApplicionFilterChain.java:166)%20com.sap.ariba.integrionmonitoring.filter.PassportPassThroughFilter.doFilter(PassportPassThroughFilter.java:66)%20org.apache.calina.core.ApplicionFilterChain.internalDoFilter(ApplicionFilterChain.java:193)%20org.apache.calina.core.ApplicionFilterChain.doFilter(ApplicionFilterChain.java:166)%20ariba.base.server.BaseFilter.doFilter(BaseFilter.java:53)%20org.apache.calina.core.ApplicionFilterChain.internalDoFilter(ApplicionFilterChain.java:193)%20org.apache.calina.core.ApplicionFilterChain.doFilter(ApplicionFilterChain.java:166)%20org.apache.calina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)%20org.apache.calina.core.StandardContextValve.invoke(StandardContextValve.java:96)%20org.apache.calina.authenticor.AuthenticorBase.invoke(AuthenticorBase.java:490)%20org.apache.calina.valves.RemoteIpValve.invoke(RemoteIpValve.java:679)%20org.apache.calina.core.StandardHostValve.invoke(StandardHostValve.java:139)%20org.apache.calina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)%20org.apache.calina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)%20org.apache.calina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)%20org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)%20org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)%20org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)%20org.apache.tomc.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)%20org.apache.tomc.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)%20java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)%20java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)%20org.apache.tomc.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)%20java.lang.Thread.run(Thread.java:745) HTTP/1.1" 200 -
+10.128.44.197 - - [12/May/2020 11:28:21] "GET /favicon.ico HTTP/1.1" 404 -
+10.128.44.197 - - [12/May/2020 11:28:32] "GET /add_to_noise?stacktrace=%20ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:935)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertNonFal(Assert.java:444)%20ariba.util.core.Assert.assertNonFal(Assert.java:287)%20ariba.base.core.aql.AQLResultCollection.%3Cinit%3E(AQLResultCollection.java:458)%20ariba.base.server.aql.AQLQueryPlan.executeQuery(AQLQueryPlan.java:566)%20ariba.base.server.aql.AQLSQLObjectSource.doGenereExecuteQuery(AQLSQLObjectSource.java:191)%20ariba.base.server.aql.AQLSQLObjectSource.genereExecuteQuery(AQLSQLObjectSource.java:285)%20ariba.base.core.aql.AQLObjectSourceImpl.valideGenereExecuteQuery(AQLObjectSourceImpl.java:285)%20ariba.base.core.aql.AQLObjectSourceImpl.executeQuery(AQLObjectSourceImpl.java:457)%20ariba.base.server.BaseServiceServerImpl.executeQuery(BaseServiceServerImpl.java:463)%20ariba.app.masterdaservice.masterda.CommonSupplierMasterdaGeneror.loadSupplierToOrganizionIDMapping(CommonSupplierMasterdaGeneror.java:123)%20ariba.app.masterdaservice.masterda.CommonSupplierMasterdaGeneror.getOrganizionIDListForSupplier(CommonSupplierMasterdaGeneror.java:104)%20ariba.app.masterdaservice.masterda.CommonSupplierMasterdaGeneror.postProcessValues(CommonSupplierMasterdaGeneror.java:82)%20ariba.app.masterdaservice.masterda.CommonMasterdaGeneror.genereDaCSVFile(CommonMasterdaGeneror.java:753)%20ariba.app.masterdaservice.masterda.CommonMasterdaGeneror.writeZip(CommonMasterdaGeneror.java:569)%20ariba.app.masterdaservice.masterda.CommonMasterdaGeneror.internalGenereDaForDeRange(CommonMasterdaGeneror.java:510)%20ariba.app.masterdaservice.masterda.CommonMasterdaGeneror.genereDaForDeRange(CommonMasterdaGeneror.java:462)%20ariba.app.masterdaservice.masterda.MasterdaToArchesPublisherTask.getMasterDaForDeRange(MasterdaToArchesPublisherTask.java:405)%20ariba.app.masterdaservice.masterda.MasterdaToArchesPublisherTask.fetchAndPublish(MasterdaToArchesPublisherTask.java:323)%20ariba.app.masterdaservice.masterda.MasterdaToArchesPublisherTask.run(MasterdaToArchesPublisherTask.java:200)%20ariba.util.scheduler.ScheduledTask.run(ScheduledTask.java:159)%20ariba.util.scheduler.ScheduledTask.run(ScheduledTask.java:178)%20ariba.util.scheduler.ScheduleEntry.execute(ScheduleEntry.java:642)%20ariba.util.scheduler.ScheduleEntry.execute(ScheduleEntry.java:483)%20ariba.app.util.scheduler.TaskRunnable.runTask(TaskRunnable.java:239)%20ariba.app.util.scheduler.TaskRunnable.runInternal(TaskRunnable.java:172)%20ariba.app.util.scheduler.TaskRunnable.run(TaskRunnable.java:110)%20ariba.util.core.ThreadPool$PooledExecutor.run(ThreadPool.java:415)%20java.lang.Thread.run(Thread.java:745) HTTP/1.1" 200 -
+10.128.44.197 - - [12/May/2020 11:36:17] "GET /add_to_noise?stacktrace=%20ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:935)%20ariba.util.core.Assert.assertNonFal(Assert.java:453)%20ariba.util.core.Assert.assertNonFal(Assert.java:444)%20ariba.util.core.Assert.assertNonFal(Assert.java:287)%20ariba.base.core.BaseIdNotFoundException.%3Cinit%3E(BaseIdNotFoundException.java:41)%20ariba.base.server.ObjectServerSession.objectFromId(ObjectServerSession.java:3482)%20ariba.base.core.BaseId.get(BaseId.java:1382)%20ariba.base.core.BaseObject.getIndirect(BaseObject.java:4885)%20ariba.common.core.ApprovalQueueWorkBase.getGroupFolderItem(ApprovalQueueWorkBase.java:293)%20ariba.common.core.ApprovalQueueWork.processQueuedObjects(ApprovalQueueWork.java:45)%20ariba.server.ormsserver.QueuedObjectProcessor.processQueuedObjects(QueuedObjectProcessor.java:145)%20ariba.server.ormsserver.QueuedObjectProcessor.processQueuedObjects(QueuedObjectProcessor.java:184)%20ariba.server.ormsserver.QueuedObjectProcessor.process(QueuedObjectProcessor.java:90)%20ariba.server.ormsserver.QueuedObjectProcessor.run(QueuedObjectProcessor.java:61)%20ariba.util.scheduler.ScheduledTask.run(ScheduledTask.java:178)%20ariba.util.scheduler.ScheduleEntry.execute(ScheduleEntry.java:642)%20ariba.util.scheduler.ScheduleEntry.execute(ScheduleEntry.java:483)%20ariba.app.util.scheduler.TaskRunnable.runTask(TaskRunnable.java:239)%20ariba.app.util.scheduler.TaskRunnable.runInternal(TaskRunnable.java:172)%20ariba.app.util.scheduler.TaskRunnable.run(TaskRunnable.java:110)%20ariba.util.core.ThreadPool$PooledExecutor.run(ThreadPool.java:415)%20java.lang.Thread.run(Thread.java:745) HTTP/1.1" 200 -
+10.128.44.197 - - [12/May/2020 12:14:01] "GET /add_to_noise?stacktrace=%20ariba.util.core.SystemUtil.stackTrace(SystemUtil.java:935)%20ariba.budget.core.Accumulor.merge(Accumulor.java:333)%20ariba.base.server.ObjectServerSession.temptRecovery(ObjectServerSession.java:2974)%20ariba.base.server.ObjectServerSession.processCommit(ObjectServerSession.java:2786)%20ariba.base.server.ObjectServerSession.transactionCommit(ObjectServerSession.java:2443)%20ariba.base.core.BaseSession.transactionCommit(BaseSession.java:1366)%20ariba.integrion.base.BchController.doCommit(BchController.java:310)%20ariba.integrion.base.BchController.commitTransaction(BchController.java:276)%20ariba.integrion.base.ObjectAdapter.processObject(ObjectAdapter.java:1294)%20ariba.integrion.base.ObjectAdapter.processObject(ObjectAdapter.java:1207)%20ariba.integrion.base.ObjectAdapter.load(ObjectAdapter.java:574)%20ariba.integrion.base.MessageContextImpl.creeObjectFromDa(MessageContextImpl.java:738)%20ariba.integrion.util.ThreadedObjectAdapter.run(ThreadedObjectAdapter.java:385)%20java.lang.Thread.run(Thread.java:745) HTTP/1.1" 200 -
+ * Detected change in '/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py', reloading
+(no name)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Debugger is active!
+ * Debugger PIN: 887-156-178
+ * Detected change in '/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py', reloading
+(no name)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+ * Debugger is active!
+ * Debugger PIN: 100-011-457
+ * Detected change in '/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py', reloading
+(no name)
+ * Restarting with stat
+/data/anaconda3/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+(no name)
+Traceback (most recent call last):
+  File "/data/Magnify/Magnify_ws/run_ws.py", line 1, in <module>
+    from my_app import app
+  File "/data/Magnify/Magnify_ws/my_app/__init__.py", line 59, in <module>
+    from my_app.add_to_noise_API.add_to_noise_view import Add_to_noise
+  File "/data/Magnify/Magnify_ws/my_app/add_to_noise_API/add_to_noise_view.py", line 57
+    updateCur.close()
+            ^
+SyntaxError: invalid syntax
